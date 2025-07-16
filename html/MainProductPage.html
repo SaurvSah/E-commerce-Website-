@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Types of Printer</title>
+    <meta name="Author" description="Aayush Kafle">
+    <!--linking external css to this page-->
+    <link rel="stylesheet" href="/css/styles.css">
+
+<style>
+* {
+    margin: 5;/*make the margine /border none*/
+    padding: 0;/*border around the web page*/
+    font-family: sans-serif;
+}
+
+.grid-container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;/*aligins element in the center*/
+    display: grid;/*displays the cintaint in the grid acc to the nmd*/
+    grid-template-columns: repeat(3, 1fr);/* 2 columns */
+    grid-template-rows: repeat(2, 1fr);/* 4 rows */
+    gap: 20px; /*  gap between elements */
+    position: relative;
+
+}
+
+.grid-item {
+    width: 500px;/*determines the width of the item conntainer*/
+    position: relative;/*position is acc the relevence*/
+    border: 5px solid #000000;/*box border color*/
+    padding: 20px;
+    text-align: center;/*aligins the item in the center of the box*/
+}
+
+.img {
+    width: 100%;
+    display: block;/*block text from getting displayed*/
+    margin: auto;
+}
+
+.containt {
+    width: auto;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background:#000000 ;/* transition darkness */
+    display:flex;
+    justify-content: center;/*item placment is center*/
+    flex-direction: column;/*dirction of the placment */
+    opacity: 0;/*darkness or transprancey before hover*/
+    transition: opacity 0.0s, background 0.5s; /*how much background when hovered can be seen*/
+}
+
+.grid-item:hover .containt {
+    opacity: 0.9;
+    background:radial-gradient(#582c2c ,#a6393f); /*background color when hovered */
+}
+
+.containt h2 {
+    font-size: 65px;/*product type size when hovered*/
+    color: #b0abab;/*color to be show when hovered*/
+    margin-bottom: 15px;/**/
+}
+
+.containt p {
+    font-size: 15px;
+    color: #fffefe;
+}
+
+.containt > * {
+    transform: translateY(25px);
+    transition: transform 0.8s;
+}
+
+.grid-item:hover .containt > * {
+    transform: translateY(5px);
+}
+
+</style>
+</head>
+<body style="background:#FCEDDA ;">
+    <!--Main Code-->
+    <header>
+      <a href="MainProductPage.html">
+          <div class="imga"><img src="/images/logo.png" width="250px" height="250px"></div>
+      </a>
+      
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+          <li><span style="color: #a6a1a1"><a href="MainProductPage.html" style="color:red">Products</a></span>
+              <ul class="company-list">
+                <li><a href="Product Home.html">Home InkJet</a></li>
+                <li><a href="Product LED .html">LED</a></li>
+                <li><a href="Product Solid ink.html">Solid Ink</a></li>
+                <li><a href="Product  Multi .html">MultiFunction</a></li>
+                <li><a href="Product  Laser .html">Laser</a></li>
+                <li><a href="Product 3D .html">3D</a></li>
+              </ul></li>
+          <li><a href="/html/blog.html">Blog</a></li>
+          <li><a href="/html/aboutUs.html">About US</a></li>
+          <li><a href="/html/research.html">Research</a></li>
+          <li>
+            <span style="color: #00fff2;"><a href="#">Company</a></span>
+              <ul class="company-list">
+                  <li><a href="Epsion.html">Epson</a></li>
+                  <li><a href="HP.html">HP</a></li>
+                  <li><a href="Maker Bot.html">Maker BOT</a></li>
+                  <li><a href="Pantum.html">Pantum</a></li>
+                  <li><a href="Canon.HTML">Canon</a></li>
+                  <li><a href="Brother.html">Brother</a></li>
+              </ul>
+          </li>
+
+      </ul>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--1 Multi funcutional  -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="../html/Product  Multi .html">
+      <img src="../images/Multifunction Printers.jpg" alt="" width="200" height="350">
+      <div class="containt">
+      <h2>Multifunction Printers</h2>
+      <p>Multifunction printers offer copying, faxing, scanning, and printing capabilities.
+        You need to determine the most crucial function and check if a printer has the features supporting that
+        functionality.For instance, if you want to print large volumes of paperwork, you'll need a 
+        high-speed multifunction printer</p></div>
+      </a>
+    </div>
+
+
+    <!--2 soldi ink -->
+    <div class="grid-item">
+      <a href="../html/Product Solid ink.html">      
+      <img src="../images/Solid Ink pRINTER.jpg" alt="" width="200" height="350">
+      <div class="containt">
+      <h2>Solid Ink Printer</h2>
+      <p>A laser-class printer that uses solid wax inks that are melted into a
+        liquid before being used. Instead of jetting the ink onto the paper directly as 
+        inkjet printers do, solid ink printers jet the ink onto a drum.</p></div>
+      </a>
+    </div>
+
+    <!--3 LED -->
+    <div class="grid-item">
+      <a href="../html/Product LED .html">      
+      <img src="../images/LED Printers.webp" alt="" width="200" height="350">
+      <div class="containt">
+      <h2>LED Printers</h2>
+      <p>Light-emitting diode (LED) printers resemble laser printers in operation but direct light
+        from energized diodes rather than a laser onto a photoconductive surface.Ion-deposition printers
+        make use of technology similar to that of photocopiers for producing electrostatic images.</p></div>
+      </a>
+    </div>
+
+    <!--4 LASER -->
+    <div class="grid-item">
+      <a href="../html/Product  Laser .html">
+      <img src="../images/Laser Printers.jpg" alt="" width="200" height="350">
+      <div class="containt">
+      <h2>Laser Printers</h2>
+      <p>A laser printer is a popular type of computer printer that uses a non-impact photocopier technology 
+        where there are no keys striking the paper. When a document is sent to the printer, a laser beam "draws"
+         the document on a selenium-coated drum using electrical charges.</p></div>
+      </a>
+    </div>
+
+    <!--5 home -->
+    <div class="grid-item">
+      <a href="../html/Product Home.html">
+      <img src="../images/Home Inkjet Printers.webp" alt="image" width="200" height="350">
+      <div class="containt">
+      <h2>Home Inkjet Printers</h2>
+      <p>A laser printer is a popular type of computer printer that uses a non-impact photocopier 
+        technology where there are no keys striking the paper. When a document is sent to the printer, 
+        a laser beam "draws" the document on a selenium-coated drum using electrical charges.</p></div>
+      </a>
+    </div>
+
+    <!--6 3D-->
+    <div class="grid-item">
+      <a href="../html/Product 3D .html">
+      <img src="../images/3D Printers.jpg"" alt="image" width="200" height="350">
+      <div class="containt">
+      <h2>3D Printer</h2>
+      <p>Three-dimensional (3D) printing is an additive manufacturing process that creates a physical object from a 
+        digital design. The process works by laying down thin layers of material in the form of liquid or powdered 
+        plastic, metal or cement, and then fusing the layers together.</p></div>
+      </a>
+    </div>
+  </div>
+
+  <br><br>
+ 
+  <footer>
+    <div class="center">
+        <a href="https://www.instagram.com/sandhyaitis_/" class="insta" target="_blank"
+        ><img src="/images/insta.png" alt="instagram">
+      </a>
+
+
+      <a href="https://www.facebook.com/profile.php?id=100077007440260" class="facebook" target="_blank">
+        <img src="/images/face.png" alt="facebook">
+      </a>
+
+      <a href="#" class="X" target="_blank"><img src="/images/x.png" alt="X"> </a>
+
+      <a href="#" class="in" target="_blank"
+        ><img src="/images/in.png" alt="linkdin">
+      </a>
+    </div>
+
+      <div class="row">
+        <div class="column" style="text-align: center;">
+          <a href="../html/aboutUs.html"><h3>About us</h3></a>
+          <br />
+          <br />
+          <a href="privacypolicy.html"><h3>Privacy Policy</h3></a>
+          <p style="font-size: 11px; margin-top: 30px">
+            © All Rights Reserved.
+          </p>
+        </div>
+
+        <div class="column" style="text-align: center;">
+          <p class="phone">+977 987654321</p>
+          <br />
+          <p>printyprinters@gmail.com</p>
+          <br />
+          <p>printyprinters111@gmail.com</p>
+          <br>
+          <p>Kamalphokhari,Kathmandu</p>
+        </div>
+
+        <div class="column" style="text-align: center";>
+          <h3>Payment method</h3>
+          <br />
+
+          <a href="https://esewa.com.np/#/home" target="_blank"
+            ><img src="/images/esewa.png" alt="E-Sewa" ; />
+          </a>
+          
+          <a href="https://khalti.com" target="_blank"><img src="/images/khalti.png" alt="Khalti";>
+          </a>
+          <br />
+          <a href="#" target="_blank"
+            ><img src="/images/pay.png" alt=" paypal" ; />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

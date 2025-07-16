@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" description="Abhinav Shrestha">
+    <link rel="stylesheet" href="../css/styles.css"> <!--linking external css to this page-->
+    <title>About Us</title>
+    <!--Internal CSS-->
+    <style>
+
+      .card_content a:hover{
+        background-color: grey;
+      }
+      nav ul li a{
+        font-size: 1.8rem;
+        color: grey;
+      }
+      .box{
+        text-align: center;
+        font-family:sans-serif;
+        padding: 30px;
+      }
+    </style>
+     <!--Internal CSS Ends-->
+</head>
+<body style="background-color: beige;">    <!--Inline CSS is used-->
+    <div class="header">
+        <div class="container">
+          <!--Navigation begins-->
+            <div class="navbar">
+                <div class="logo">
+                 <img src="/images/logo.png" width="250px" height="250px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/home.html"> Home</a></li>
+                        <li><a href="/html/MainProductPage.html">Products</a></li>
+                        <li><a href="/html/blog.html">Blog</a></li>
+                        <li><a href="/html/research.html">Research</a></li>
+                        <li><a href="/html/aboutUs.html" style="color:red">About Us</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                  <img src="../images/cart.png" width="30px" height="30px">
+              </ul>
+              <!--Navigation Ends-->
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="box">
+        <h2>Printy Printers</h2><br>
+        <p style="padding:30px;">Printy printers make it easy to print from hardy copy to softy copy. <br>People can share their experience through this printers as we provide transfering the copy from one place to another through our printers.Given that, it gives people hope that they can express their emotions from printers when they cant express it through words.</p>
+    </div>
+    <br><br>
+    <main>
+    <section class="card"> <!--Card of an individual-->
+        <div class="card_image">
+            <img src="../images/abhinav.jpg" alt="Image">
+        </div>
+        <div class="card_content"> 
+            <h3>Abhinav Shrestha</h3>
+            <p>Networking and IT security student, Professional Hacker</p>
+            <a href="abhinavcv.html">View CV</a>
+        </div>
+    </section>
+    <section class="card"><!--Card of an individual-->
+        <div class="card_image">
+            <img src="/images/sandhiya.jpeg" alt="Image">
+        </div>
+        <div class="card_content"><!--Card of an individual-->
+            <h3>Sandhya Paudel</h3>
+            <p>Networking and IT security student, Professional Business Handler</p>
+            <a href="/html/sandhiyacv.html">View CV</a>
+        </div>
+    </section>
+    <section class="card"><!--Card of an individual-->
+        <div class="card_image">
+            <img src="/images/saurav.jpg" alt="Image">
+        </div>
+        <div class="card_content">
+            <h3>Saurav Kumar Sah</h3>
+            <p>Networking and IT security student, Professional Manager</p>
+            <a href="/html/sauravcv.html">View CV</a>
+        </div>
+    </section>
+    <section class="card"><!--Card of an individual-->
+        <div class="card_image">
+            <img src="/images/aayush.jpg" alt="Image">
+        </div>
+        <div class="card_content">
+            <h3>Aayush Kafle</h3>
+            <p>Networking and IT security student, Website Developer</p>
+            <a href="/html/aayushcv.html">View CV</a>
+        </div>
+    </section>
+    </main>
+    <br><br>
+     <div class="form"> <!--Form starts here-->
+        <form name="Form" onsubmit="validateForm()">
+            <h2>Feedback Form:</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact"><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+
+            <label>Are you an existing member?</label><br>
+            <input type="radio" name="member" value="Yes" checked>Yes
+            <input type="radio" name="member" value="No">No<br><br>
+
+            <label for="feedback">Give your feedback here:</label><br>
+            <textarea id="feedback" name="feedback" cols="10" rows="5"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <!--Form ends here-->
+
+        <!--Internal JS is used-->
+        <script type="text/javascript">
+            function validateForm() {
+                var Name = document.forms["Form"]["name"].value;
+                var Email = document.forms["Form"]["email"].value;
+                var Contact = document.forms["Form"]["contact"].value;
+                var Feedback = document.forms["Form"]["feedback"].value;
+
+                if (Name === "" || Email === "" || Contact === "" || Feedback === "") {
+                    alert("Empty fields. Please fill in all the fields");
+                    
+                } else {
+                    alert("Thank you for your feedback");
+                    
+                }
+            }
+        </script>
+        <!--Internal JS ends-->
+    </div>
+    <br><br>
+    <!--Footer begins-->
+    <footer>
+        <div class="center">
+          <a href="https://www.instagram.com/sandhyaitis_/" class="insta" target="_blank"
+            ><img src="/images/insta.png" alt="instagram">
+          </a>
+  
+          <a href="https://www.facebook.com/profile.php?id=100077007440260" class="facebook" target="_blank"
+            ><img src="/images/face.png" alt="facebook">
+          </a>
+  
+          <a href="#" class="X" target="_blank">
+            <img src="/images/x.png" alt="X"> 
+          </a>
+  
+          <a href="#" class="in" target="_blank"
+            ><img src="/images/in.png" alt="linkdin">
+          </a>
+        </div>
+  
+          <div class="row">
+            <div class="column" style="text-align: center;">
+              <a href="../html/aboutUs.html"><h3>About us</h3></a>
+              <br />
+              <br />
+              <a href="privacypolicy.html"><h3>Privacy Policy</h3></a>
+              <p style="font-size: 11px; margin-top: 30px">
+                © All Rights Reserved.
+              </p>
+            </div>
+  
+            <div class="column" style="text-align: center;">
+              <p class="phone">+977 987654321</p>
+              <br />
+              <p>printyprinters@gmail.com</p>
+              <br />
+              <p>printyprinters111@gmail.com</p>
+              <br>
+              <p>Kamalphokhari,Kathmandu</p>
+            </div>
+  
+            <div class="column" style="text-align: center";>
+              <h3>Payment method</h3>
+              <br />
+  
+              <a href="https://esewa.com.np/#/home" target="_blank"
+                ><img src="/images/esewa.png" alt="E-Sewa" ; />
+              </a>
+              
+              <a href="https://khalti.com" target="_blank"><img src="/images/khalti.png" alt="Khalti";>
+              </a>
+              <br />
+              <a href="#" target="_blank"
+                ><img src="/images/pay.png" alt=" paypal" ; />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer ends-->
+</body>
+</html>
